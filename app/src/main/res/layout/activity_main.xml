@@ -9,8 +9,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.mikeschen.www.todoandroidmvp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Info"
+            android:id="@+id/userInfo" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userInfo"
+            android:id="@+id/fullName"
+            android:hint="Full Name"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullName"
+            android:id="@+id/email"
+            android:hint="Email"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 </RelativeLayout>
