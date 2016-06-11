@@ -22,6 +22,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "FullName : " + fullName + "/nEmail : " + email;
+        return "Full Name : " + fullName + " Email : " + email;
     }
 }
